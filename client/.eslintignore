@@ -1,0 +1,4 @@
+// .eslintignore
+dist/*
+public/*
+src/serviceWorker.ts
