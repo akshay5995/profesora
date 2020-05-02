@@ -1,24 +1,16 @@
 import * as React from 'react';
-import { Component } from 'react';
 import { render } from 'react-dom';
-import { Layout } from 'antd';
-import AppBar from "./components/AppBar";
-import Content from "./components/Content";
-import Footer from "./components/Footer";
+import { Auth0Provider } from './hoc/AuthWrapper';
 import 'antd/dist/antd.css';
-import './styles/index.css';
+import './index.css';
+import Main from './components/Main';
 
-
-class App extends Component {
-  render() {
-    return (
-      <Layout style={{ height: '100%', width: '100%' }}>
-        <AppBar />
-        <Content />
-        <Footer />
-      </Layout>
-    );
-  }
-}
+const App = (): JSX.Element => {
+  return (
+    <Auth0Provider>
+      <Main />
+    </Auth0Provider>
+  );
+};
 
 render(<App />, document.getElementById('root'));

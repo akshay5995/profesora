@@ -1,0 +1,36 @@
+.question-text {
+  background: white !important;
+  padding: 8px !important;
+  border-radius: 8px;
+}
+
+.question-container {
+  padding: 8px 0;
+  height: 90%;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: grey;
+  justify-content: flex-end !important;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  background: whitesmoke;
+}
+
+.error {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  background: whitesmoke;
+}
