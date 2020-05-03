@@ -1,14 +1,12 @@
-// REPLACE CONFIG:
-
 const auth0config = {
-  domain: '',
-  client_id: '',
-  audience: 'hasura',
+  domain: process.env.DOMAIN,
+  client_id: process.env.CLIENT_ID,
+  audience: process.env.AUDIENCE,
 };
 
 const hasuraConfig = {
-  gqlEndpoint: '',
-  wssEndpoint: '',
+  gqlEndpoint: process.env.GQLENDPOINT,
+  wssEndpoint: process.env.WSSENDPOINT,
 };
 
 export { auth0config, hasuraConfig };

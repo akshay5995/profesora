@@ -1,0 +1,6 @@
+// REPLACE CONFIG and Delete this line
+DOMAIN=auth0 domain
+CLIENT_ID=auth0 client id
+AUDIENCE=hasura
+GQLENDPOINT=http endpoint for hasura gql
+WSSENDPOINT=wss endpoint for hasura gql
