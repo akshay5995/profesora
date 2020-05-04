@@ -1,1 +1,6 @@
-endpoint: https://Your-Hasura-Endpoint
+version: 2
+endpoint: graphql-host-endpoint # REPLACE CONFIG without /v1/graphql
+metadata_directory: metadata
+actions:
+  kind: synchronous
+  handler_webhook_baseurl: graphql-host-endpoint # REPLACE CONFIG without /v1/graphql
